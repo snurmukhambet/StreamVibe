@@ -1,6 +1,6 @@
 // minista.config.ts
 import { defineConfig } from "minista"
-import path from 'path'
+import path from "path"
 
 export default defineConfig({
   root: "",
@@ -63,10 +63,12 @@ export default defineConfig({
     },
   },
   resolve: {
-    alias: [{
+    alias: [
+      {
         find: "@/",
-        replacement: path.resolve('src') + '/'
-    }],
+        replacement: path.resolve("src") + "/",
+      },
+    ],
   },
   css: {
     modules: {
@@ -81,7 +83,7 @@ export default defineConfig({
         additionalData: `
           @use '@/styles/helpers' as *;
         `,
-        silenceDeprecations: ['legacy-js-api']
+        silenceDeprecations: ["legacy-js-api"],
       },
       less: {},
       stylus: {},
