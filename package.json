@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "minista",
+    "start": "minista",
     "build": "minista build",
     "preview": "minista preview",
     "lint": "eslint . --ext .js,.jsx",
@@ -24,9 +24,11 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.1.0",
     "minista": "^3.1.12",
+    "postcss-pxtorem": "^6.1.0",
     "prettier": "^3.5.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sass": "^1.81.0"
   },
   "lint-staged": {
     "*.{js,jsx}": [
@@ -36,5 +38,11 @@
     "*.{json,md,css}": [
       "prettier --write"
     ]
+  },
+  "dependencies": {
+    "@a1rth/css-normalize": "^1.1.9",
+    "classnames": "^2.5.1",
+    "imask": "^7.6.1",
+    "swiper": "^11.1.15"
   }
 }
